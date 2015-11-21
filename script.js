@@ -1,21 +1,22 @@
 
+console.log("this is script.js");
+
 jQuery(document).ready(function($) {
 
   var acro = {
   'if' :'2',
   'but' : '2',
   'computer' : '3',
-  'John Smith' :'5'
+  'Adam Smith' :'5'
 
   }
 
 
-	//this is somehow iterating over the nick object
 
-	//where is this nick thing
-	//used to be nick
+  console.log("this is script.js");
+
+
 $.each(acro, function(key, value) {
-		//we are going t o chnage this to loop through DOM and check text for a acertain condition
 
 
        	  $("p").highlight(key, {caseSensitive: false, className: 'yellowhigh', wordsOnly:true });
@@ -42,11 +43,11 @@ $.each(acro, function(key, value) {
         }
       },
 
-            close: true,
+            /*close: true,
             hideOn: false,
             skin: 'light',
             radius: false,
-            position: 'topleft'
+            position: 'topleft'*/
 
 
     });

@@ -15,21 +15,29 @@
     {
       "matches": ["http://*/*", "https://*/*"],
       "css": ["styles.css", "tipped.css"],
-      "js": ["jquery-2.1.4.min.js", "jquery-highlight1.js", "spinners.min.js", "tipped.js", "script.js"],
+      "js": ["jquery-1.9.1.js", "jquery-highlight1.js", "spinners.min.js", "tipped.js"],
       "run_at": "document_end"
     }
+  ],
+  "permissions":[
+    "activeTab"
+
   ],
 
   "web_accessible_resources": [
 
   ],
+  "background":{
+    "scripts":["background.js"],
+  
+  },
 
   "icons": {
 
           "128": "icon.png" },
 
 	"browser_action": {
-	"scripts": ["background.js"]
+
 
   }
 

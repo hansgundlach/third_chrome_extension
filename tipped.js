@@ -6,7 +6,8 @@
  *
  * License: http://projects.nickstakenburg.com/tipped/license
  */
-;var Tipped = { version: '3.2.0' };
+ //why is their a semicolon right befor var
+var Tipped = { version: '3.2.0' };
 
 Tipped.Skins = {
   // base skin, don't modify! (create custom skins in a separate file)
@@ -64,7 +65,7 @@ Tipped.Skins = {
     },
     target: 'self'
   },
-  
+
   // Every other skin inherits from this one
   'reset': {
     ajax: false,
@@ -79,20 +80,20 @@ Tipped.Skins = {
     hook: 'topmiddle',
     stem: true
   },
-  
+
   'dark': {
     background: { color: '#282828' },
     border: { color: '#9b9b9b', opacity: .4, size: 1 },
     shadow: { opacity: .02 },
     spinner: { color: '#fff' }
   },
-  
+
   'light': {
     background: { color: '#fff' },
     border: { color: '#646464', opacity: .4, size: 1 },
     shadow: { opacity: .04 }
   },
-  
+
   'gray': {
     background: {
       color: [
@@ -100,9 +101,9 @@ Tipped.Skins = {
         { position: 1, color: '#808080' }
       ]
     },
-    border: { color: '#131313', size: 1, opacity: .6 } 
+    border: { color: '#131313', size: 1, opacity: .6 }
   },
-  
+
   'tiny': {
     background: { color: '#161616' },
     border: { color: '#969696', opacity: .35, size: 1 },
@@ -122,7 +123,7 @@ Tipped.Skins = {
     background: '#ffffaa',
     border: { size: 1, color: '#6d5208', opacity: .4 }
   },
-  
+
   'red': {
     background: {
       color: [
@@ -133,7 +134,7 @@ Tipped.Skins = {
     border: { size: 1, color: '#150201', opacity: .6 },
     spinner: { color: '#fff' }
   },
-  
+
   'green': {
     background: {
       color: [
