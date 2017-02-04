@@ -22,6 +22,13 @@ $.each(acro, function(key, value) {
        	  $("p").highlight(key, {caseSensitive: false, className: 'yellowhigh', wordsOnly:true });
 
 
+
+          //see if this accepts tooltipster
+      //    $('p').tooltipster();
+
+
+
+
       /*    $("p").LiteTooltip({
         textalign: 'left',
         trigger: 'hoverable',
@@ -65,20 +72,57 @@ $.each(acro, function(key, value) {
 			//Tipped.create(this, 'Some tooltip text');
 
 
-      var jSONdata;
-      var data;
+var data;
+
+
+
+      $.ajax({
+          async: false,
+          url: "t",
+          success: function(result) {
+            data =  result.query.pages[21721040].extract;
+          }
+      });
+
+
+          Tipped.create(this, data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*    var jSONdata;
+
       $.getJSON('https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Stack%20Overflow', function(result) {
           //data is the JSON string
-      /*    $.each(result, function(i, field){
+         $.each(result, function(i, field){
                        console.log(i);
                        jSONdata = field;
-          });*/
+          });
       // console.log(result.query.pages.extract);
       //console.log(result);
-    data =  result.query.pages[21721040].extract
+    data =  result.query.pages[21721040].extract*/
+
     //  console.log(result.query.pages.extract);
-      });
-console.log(data)
+//      });
+//console.log(data)
 
 //only available in pro version
 /*	Tipped.create(this, {

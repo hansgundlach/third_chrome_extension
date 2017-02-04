@@ -4,7 +4,12 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     code: 'document.body.style.backgroundColor="red"'
   });*/
 
-    chrome.tabs.executeScript(null, {file: "script.js"});
+//attempting to load other scripts
+    chrome.tabs.executeScript(null, {file: "tooltip-master/dist/css/js/tooltipster.core.js"});
+
+
+chrome.tabs.executeScript(null, {file: "script.js"});
+
     console.log("maybe background is working");
   });
 
