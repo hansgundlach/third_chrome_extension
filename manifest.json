@@ -14,8 +14,8 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "css": ["styles.css", "tipped.css"],
-      "js": ["jquery-1.9.1.js", "jquery-highlight1.js", "spinners.min.js", "tipped.js"],
+      "css": ["styles.css", "tipped.css","tooltipster.bundle.min.css", "jquery.qtip.min.css"],
+      "js": ["jquery-1.9.1.js", "jquery-highlight1.js", "spinners.min.js", "tipped.js", "tooltipster.bundle.min.js", "jquery.qtip.min.js", "mark.js", "jquery.mark.min.js"],
       "run_at": "document_end"
     }
   ],
