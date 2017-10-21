@@ -1,2 +1,2 @@
 # third_chrome_extension
-chrome extension capable of highlighting words. The project is still in development and some things might not work.
+Chrome extension built to highlight words and give definitons. Project currently gives wikipedia pages for certain groups of words. Based on list in project. 
